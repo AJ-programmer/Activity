@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4279cc8535.js" crossorigin="anonymous"></script>
+    <title>About me</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="active">Home</li>
+                <li><a href="Friends.html" class="Fr">Friends</a></li>
+                <li>Hobbies</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="app-text">
+         <h1 class="anim"> Life about <br>Aj Bernal</h1>
+         <p class="anim">Born on January 20, 2005<br>Former SVI Clerk at SM City Tanza<br>Future Game Developer<br>Future Millionaire
+         </p>
+     <div class="play-btn">
+        <a href="#" class="play-btn-inner anim"> More about me</a>
+        </div>
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/aj.bernal.9210"><i class="fa-brands fa-facebook anim"></i></a></li>
+                <li><a href="https://www.instagram.com/ajjbernal/"><i class="fa-brands fa-instagram anim"></i></a></li>
+                <li><a href="https://github.com/AJ-programmer"><i class="fa-brands fa-github anim"></i></a></li>
+            </ul>
+        </div>
+        <img src="IMG/1.png" class="feature anim">
+     </div>
+    
+    
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #42455a;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        width: 80%;
+        height: 70%;
+        top: 25%;
+        left: 130px;
+        position: absolute;
+        color: #fff;
+    }
+    .app-text{
+        width: 50%;
+        float: left;
+    }
+    .app-text h1{
+        font-size: 43px;
+        width: 640px;
+        position: relative;
+        margin-left: 40px;
+    }
+    .app-text p{
+       width: 650px;
+       font-size: 15px;
+       margin: 30px 0 30px 40px;
+       line-height: 25px;
+       color: #919191;
+       animation-delay: 0.5s;
+    }
+    .menu ul{
+        display: inline-flex;
+        margin: 50px;
+    }
+    .menu ul li{
+        list-style: none;
+        margin: 0 20px;
+        color: #b2b1b1;
+        cursor: pointer;
+    }
+    .active{
+        color: aqua !important; 
+    }
+    .play-btn .play-btn-inner{
+        margin-left: 40px;
+        display: inline-flex;
+        padding: 15px 80px;
+        font-size: 15px;
+        animation-delay: 1.0s;
+    }
+    .play-btn-inner{
+        display: inline-block;
+        text-decoration: none;
+        padding: 14px 40px;
+        color: #fff;
+        background-image: linear-gradient(45deg, #fd00da, #19d7f8);
+        font-size: 14px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+    }
+    .play-btn-inner .fa-solid{
+        padding: 40px ;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .play-btn-inner:hover{
+        border-top-right-radius: 30px;
+
+
+    }
+    .social-icons{
+        right: 72px;
+        bottom: 35px;
+        position: absolute;
+    }
+    .social-icons ul li{
+        list-style: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .social-icons ul li a{
+        color: #999;
+        border-radius: 50%;
+        border: 1px solid #999;
+        padding: 5px;
+        display: block;
+    }
+    .feature{
+        width: 530px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        animation-delay: 1.0s;
+    }
+    .feature.anim{
+        animation-delay: 1.5s;
+    }
+    .Fr{
+        color: #b2b1b1;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .anim{
+        opacity: 0;
+        transform: translateY(30px);
+        animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup{
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+</style>
